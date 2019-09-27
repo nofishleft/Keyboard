@@ -50,10 +50,10 @@ Connection ~ 3200 1000
 Wire Wire Line
 	3200 1000 3200 850 
 $Comp
-L MCU_Microchip_ATmega:ATmega32U4-AU U?
+L MCU_Microchip_ATmega:ATmega32U4-AU U1
 U 1 1 5D8CB7C1
 P 3300 2800
-F 0 "U?" H 3300 911 50  0000 C CNN
+F 0 "U1" H 3300 911 50  0000 C CNN
 F 1 "ATmega32U4-AU" H 3300 820 50  0000 C CNN
 F 2 "Package_QFP:TQFP-44_10x10mm_P0.8mm" H 3300 2800 50  0001 C CIN
 F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/Atmel-7766-8-bit-AVR-ATmega16U4-32U4_Datasheet.pdf" H 3300 2800 50  0001 C CNN
@@ -74,12 +74,12 @@ F 3 "" H 4350 3400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_Small R?
+L Device:R_Small R5
 U 1 1 5D8D1835
 P 4100 3400
-F 0 "R?" V 3904 3400 50  0000 C CNN
+F 0 "R5" V 3904 3400 50  0000 C CNN
 F 1 "10k" V 3995 3400 50  0000 C CNN
-F 2 "" H 4100 3400 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 4100 3400 50  0001 C CNN
 F 3 "~" H 4100 3400 50  0001 C CNN
 	1    4100 3400
 	0    1    1    0   
@@ -87,23 +87,23 @@ $EndComp
 Wire Wire Line
 	4200 3400 4350 3400
 $Comp
-L Device:R_Small R?
+L Device:R_Small R3
 U 1 1 5D8D4621
 P 2100 2300
-F 0 "R?" V 1904 2300 50  0000 C CNN
+F 0 "R3" V 1904 2300 50  0000 C CNN
 F 1 "22" V 1995 2300 50  0000 C CNN
-F 2 "" H 2100 2300 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 2100 2300 50  0001 C CNN
 F 3 "~" H 2100 2300 50  0001 C CNN
 	1    2100 2300
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R_Small R?
+L Device:R_Small R2
 U 1 1 5D8D4F73
 P 1900 2400
-F 0 "R?" V 1704 2400 50  0000 C CNN
+F 0 "R2" V 1704 2400 50  0000 C CNN
 F 1 "22" V 1795 2400 50  0000 C CNN
-F 2 "" H 1900 2400 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 1900 2400 50  0001 C CNN
 F 3 "~" H 1900 2400 50  0001 C CNN
 	1    1900 2400
 	0    1    1    0   
@@ -113,12 +113,12 @@ Wire Wire Line
 Wire Wire Line
 	2700 2400 2000 2400
 $Comp
-L Device:C_Small C?
+L Device:C_Small C6
 U 1 1 5D8D5FD8
 P 2050 2700
-F 0 "C?" H 2142 2746 50  0000 L CNN
+F 0 "C6" H 2142 2746 50  0000 L CNN
 F 1 "1uF" H 2142 2655 50  0000 L CNN
-F 2 "" H 2050 2700 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 2050 2700 50  0001 C CNN
 F 3 "~" H 2050 2700 50  0001 C CNN
 	1    2050 2700
 	1    0    0    -1  
@@ -150,45 +150,45 @@ F 3 "" H 1650 3300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C_Small C?
+L Device:C_Small C5
 U 1 1 5D8D71E4
 P 1650 3550
-F 0 "C?" H 1742 3596 50  0000 L CNN
+F 0 "C5" H 1742 3596 50  0000 L CNN
 F 1 "0.1uF" H 1742 3505 50  0000 L CNN
-F 2 "" H 1650 3550 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 1650 3550 50  0001 C CNN
 F 3 "~" H 1650 3550 50  0001 C CNN
 	1    1650 3550
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C_Small C?
+L Device:C_Small C2
 U 1 1 5D8D7A31
 P 1150 3550
-F 0 "C?" H 1242 3596 50  0000 L CNN
+F 0 "C2" H 1242 3596 50  0000 L CNN
 F 1 "0.1uF" H 1242 3505 50  0000 L CNN
-F 2 "" H 1150 3550 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 1150 3550 50  0001 C CNN
 F 3 "~" H 1150 3550 50  0001 C CNN
 	1    1150 3550
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C_Small C?
+L Device:C_Small C7
 U 1 1 5D8D7C60
 P 2150 3550
-F 0 "C?" H 2242 3596 50  0000 L CNN
+F 0 "C7" H 2242 3596 50  0000 L CNN
 F 1 "10uF" H 2242 3505 50  0000 L CNN
-F 2 "" H 2150 3550 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 2150 3550 50  0001 C CNN
 F 3 "~" H 2150 3550 50  0001 C CNN
 	1    2150 3550
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C_Small C?
+L Device:C_Small C1
 U 1 1 5D8D7EF5
 P 650 3550
-F 0 "C?" H 742 3596 50  0000 L CNN
+F 0 "C1" H 742 3596 50  0000 L CNN
 F 1 "0.1uF" H 742 3505 50  0000 L CNN
-F 2 "" H 650 3550 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 650 3550 50  0001 C CNN
 F 3 "~" H 650 3550 50  0001 C CNN
 	1    650  3550
 	1    0    0    -1  
@@ -238,12 +238,12 @@ $EndComp
 Wire Wire Line
 	2400 2100 2700 2100
 $Comp
-L Device:Crystal_GND24_Small Y?
+L Device:Crystal_GND24_Small Y1
 U 1 1 5D8DD184
 P 1700 1600
-F 0 "Y?" V 1654 1744 50  0000 L CNN
+F 0 "Y1" V 1654 1744 50  0000 L CNN
 F 1 "16MHz" V 1745 1744 50  0000 L CNN
-F 2 "" H 1700 1600 50  0001 C CNN
+F 2 "Crystal:Crystal_SMD_3225-4Pin_3.2x2.5mm" H 1700 1600 50  0001 C CNN
 F 3 "~" H 1700 1600 50  0001 C CNN
 	1    1700 1600
 	0    1    1    0   
@@ -253,23 +253,23 @@ Wire Wire Line
 Wire Wire Line
 	2700 1700 1700 1700
 $Comp
-L Device:C_Small C?
+L Device:C_Small C3
 U 1 1 5D8E220B
 P 1350 1400
-F 0 "C?" V 1121 1400 50  0000 C CNN
+F 0 "C3" V 1121 1400 50  0000 C CNN
 F 1 "22pF" V 1212 1400 50  0000 C CNN
-F 2 "" H 1350 1400 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 1350 1400 50  0001 C CNN
 F 3 "~" H 1350 1400 50  0001 C CNN
 	1    1350 1400
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:C_Small C?
+L Device:C_Small C4
 U 1 1 5D8E2E48
 P 1350 1800
-F 0 "C?" V 1121 1800 50  0000 C CNN
+F 0 "C4" V 1121 1800 50  0000 C CNN
 F 1 "22pF" V 1212 1800 50  0000 C CNN
-F 2 "" H 1350 1800 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 1350 1800 50  0001 C CNN
 F 3 "~" H 1350 1800 50  0001 C CNN
 	1    1350 1800
 	0    1    1    0   
@@ -315,12 +315,12 @@ Wire Wire Line
 Connection ~ 1150 2000
 Connection ~ 1600 2000
 $Comp
-L Switch:SW_Push SW?
+L Switch:SW_Push SW1
 U 1 1 5D8E66DE
 P 2250 1150
-F 0 "SW?" H 2250 1435 50  0000 C CNN
+F 0 "SW1" H 2250 1435 50  0000 C CNN
 F 1 "SW_Push" H 2250 1344 50  0000 C CNN
-F 2 "" H 2250 1350 50  0001 C CNN
+F 2 "random-keyboard-parts:SKQG-1155865" H 2250 1350 50  0001 C CNN
 F 3 "~" H 2250 1350 50  0001 C CNN
 	1    2250 1150
 	1    0    0    -1  
@@ -347,12 +347,12 @@ Wire Wire Line
 Wire Wire Line
 	1950 1150 2050 1150
 $Comp
-L Device:R_Small R?
+L Device:R_Small R4
 U 1 1 5D8E8DB9
 P 2550 950
-F 0 "R?" H 2609 996 50  0000 L CNN
+F 0 "R4" H 2609 996 50  0000 L CNN
 F 1 "10k" H 2609 905 50  0000 L CNN
-F 2 "" H 2550 950 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 2550 950 50  0001 C CNN
 F 3 "~" H 2550 950 50  0001 C CNN
 	1    2550 950 
 	1    0    0    -1  
@@ -404,12 +404,12 @@ F 3 "" H 1400 7100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_Small R?
+L Device:R_Small R1
 U 1 1 5D8EA5AB
 P 850 7000
-F 0 "R?" H 909 7046 50  0000 L CNN
+F 0 "R1" H 909 7046 50  0000 L CNN
 F 1 "33k" H 909 6955 50  0000 L CNN
-F 2 "" H 850 7000 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 850 7000 50  0001 C CNN
 F 3 "~" H 850 7000 50  0001 C CNN
 	1    850  7000
 	1    0    0    -1  
@@ -426,12 +426,12 @@ Wire Wire Line
 Wire Wire Line
 	1750 5900 1950 5900
 $Comp
-L Connector:USB_C_Plug_USB2.0 P?
+L Connector:USB_C_Plug_USB2.0 P1
 U 1 1 5D8EC3D3
 P 1150 6000
-F 0 "P?" H 1257 6867 50  0000 C CNN
+F 0 "P1" H 1257 6867 50  0000 C CNN
 F 1 "USB_C_Plug_USB2.0" H 1257 6776 50  0000 C CNN
-F 2 "" H 1300 6000 50  0001 C CNN
+F 2 "Type-C:USB_C_GCT_USB4085" H 1300 6000 50  0001 C CNN
 F 3 "https://www.usb.org/sites/default/files/documents/usb_type-c.zip" H 1300 6000 50  0001 C CNN
 	1    1150 6000
 	1    0    0    -1  
@@ -459,12 +459,12 @@ F 3 "" H 2000 5400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:Polyfuse_Small F?
+L Device:Polyfuse_Small F1
 U 1 1 5D8EE86F
 P 2450 5400
-F 0 "F?" V 2245 5400 50  0000 C CNN
+F 0 "F1" V 2245 5400 50  0000 C CNN
 F 1 "500mA" V 2336 5400 50  0000 C CNN
-F 2 "" H 2500 5200 50  0001 L CNN
+F 2 "Fuse:Fuse_1206_3216Metric" H 2500 5200 50  0001 L CNN
 F 3 "~" H 2450 5400 50  0001 C CNN
 	1    2450 5400
 	0    1    1    0   
