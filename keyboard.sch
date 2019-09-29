@@ -4,7 +4,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 2
+Sheet 1 3
 Title ""
 Date ""
 Rev ""
@@ -36,56 +36,30 @@ F 3 "" H 2800 4600 50  0001 C CNN
 	1    2800 4600
 	1    0    0    -1  
 $EndComp
-Connection ~ 3200 4600
-Wire Wire Line
-	2800 4600 3200 4600
-Wire Wire Line
-	3300 4600 3200 4600
-Wire Wire Line
-	3200 1000 3300 1000
-Wire Wire Line
-	3300 1000 3400 1000
-Connection ~ 3300 1000
-Connection ~ 3200 1000
-Wire Wire Line
-	3200 1000 3200 850 
-$Comp
-L MCU_Microchip_ATmega:ATmega32U4-AU U1
-U 1 1 5D8CB7C1
-P 3300 2800
-F 0 "U1" H 3300 911 50  0000 C CNN
-F 1 "ATmega32U4-AU" H 3300 820 50  0000 C CNN
-F 2 "Package_QFP:TQFP-44_10x10mm_P0.8mm" H 3300 2800 50  0001 C CIN
-F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/Atmel-7766-8-bit-AVR-ATmega16U4-32U4_Datasheet.pdf" H 3300 2800 50  0001 C CNN
-	1    3300 2800
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4000 3400 3900 3400
 $Comp
 L power:GND #PWR0103
 U 1 1 5D8D3550
-P 4350 3400
-F 0 "#PWR0103" H 4350 3150 50  0001 C CNN
-F 1 "GND" H 4355 3227 50  0000 C CNN
-F 2 "" H 4350 3400 50  0001 C CNN
-F 3 "" H 4350 3400 50  0001 C CNN
-	1    4350 3400
+P 4800 3400
+F 0 "#PWR0103" H 4800 3150 50  0001 C CNN
+F 1 "GND" H 4805 3227 50  0000 C CNN
+F 2 "" H 4800 3400 50  0001 C CNN
+F 3 "" H 4800 3400 50  0001 C CNN
+	1    4800 3400
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:R_Small R5
 U 1 1 5D8D1835
-P 4100 3400
-F 0 "R5" V 3904 3400 50  0000 C CNN
-F 1 "10k" V 3995 3400 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" H 4100 3400 50  0001 C CNN
-F 3 "~" H 4100 3400 50  0001 C CNN
-	1    4100 3400
+P 4550 3400
+F 0 "R5" V 4354 3400 50  0000 C CNN
+F 1 "10k" V 4445 3400 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 4550 3400 50  0001 C CNN
+F 3 "~" H 4550 3400 50  0001 C CNN
+	1    4550 3400
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	4200 3400 4350 3400
+	4650 3400 4800 3400
 $Comp
 L Device:R_Small R3
 U 1 1 5D8D4621
@@ -108,10 +82,6 @@ F 3 "~" H 1900 2400 50  0001 C CNN
 	1    1900 2400
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	2200 2300 2700 2300
-Wire Wire Line
-	2700 2400 2000 2400
 $Comp
 L Device:C_Small C6
 U 1 1 5D8D5FD8
@@ -123,8 +93,6 @@ F 3 "~" H 2050 2700 50  0001 C CNN
 	1    2050 2700
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	2050 2600 2700 2600
 $Comp
 L power:GND #PWR0104
 U 1 1 5D8D6808
@@ -235,8 +203,6 @@ F 3 "" H 2400 2100 50  0001 C CNN
 	1    2400 2100
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	2400 2100 2700 2100
 $Comp
 L Device:Crystal_GND24_Small Y1
 U 1 1 5D8DD184
@@ -248,10 +214,6 @@ F 3 "~" H 1700 1600 50  0001 C CNN
 	1    1700 1600
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	1700 1500 2700 1500
-Wire Wire Line
-	2700 1700 1700 1700
 $Comp
 L Device:C_Small C3
 U 1 1 5D8E220B
@@ -329,8 +291,6 @@ Wire Wire Line
 	2450 1150 2550 1150
 Wire Wire Line
 	2550 1150 2550 1300
-Wire Wire Line
-	2550 1300 2700 1300
 $Comp
 L power:GND #PWR0109
 U 1 1 5D8E7793
@@ -475,52 +435,113 @@ U 5D9B08E9
 F0 "Key Matrix" 50
 F1 "key_matrix.sch" 50
 $EndSheet
-Text GLabel 5750 1250 2    50   Input ~ 0
+Text GLabel 3900 2600 2    50   Input ~ 0
 COL0
-Text GLabel 5750 1400 2    50   Input ~ 0
+Text GLabel 3900 2000 2    50   Input ~ 0
 COL1
-Text GLabel 5750 1550 2    50   Input ~ 0
+Text GLabel 3900 2500 2    50   Input ~ 0
 COL2
-Text GLabel 5750 1700 2    50   Input ~ 0
+Text GLabel 3900 2700 2    50   Input ~ 0
 COL3
-Text GLabel 5750 1850 2    50   Input ~ 0
+Text GLabel 3900 2800 2    50   Input ~ 0
 COL4
-Text GLabel 5750 2000 2    50   Input ~ 0
+Text GLabel 3900 3000 2    50   Input ~ 0
 COL5
-Text GLabel 5750 2150 2    50   Input ~ 0
+Text GLabel 3900 2300 2    50   Input ~ 0
 COL6
-Text GLabel 5750 2300 2    50   Input ~ 0
+Text GLabel 3900 2200 2    50   Input ~ 0
 COL7
-Text GLabel 5750 2450 2    50   Input ~ 0
+Text GLabel 3900 1900 2    50   Input ~ 0
 COL8
-Text GLabel 5750 2600 2    50   Input ~ 0
+Text GLabel 3900 1800 2    50   Input ~ 0
 COL9
-Text GLabel 5750 2750 2    50   Input ~ 0
+Text GLabel 3900 1700 2    50   Input ~ 0
 COL10
-Text GLabel 5750 2900 2    50   Input ~ 0
+Text GLabel 3900 3200 2    50   Input ~ 0
 COL11
-Text GLabel 5750 3050 2    50   Input ~ 0
+Text GLabel 3900 3100 2    50   Input ~ 0
 COL12
-Text GLabel 5750 3200 2    50   Input ~ 0
+Text GLabel 3900 2900 2    50   Input ~ 0
 COL13
-Text GLabel 5750 3350 2    50   Input ~ 0
+Text GLabel 3900 1600 2    50   Input ~ 0
 COL14
-Text GLabel 5750 3500 2    50   Input ~ 0
+Text GLabel 3900 1500 2    50   Input ~ 0
 COL15
-Text GLabel 5750 3650 2    50   Input ~ 0
+Text GLabel 3900 1400 2    50   Input ~ 0
 COL16
-Text GLabel 5750 3800 2    50   Input ~ 0
+Text GLabel 3900 1300 2    50   Input ~ 0
 COL17
-Text GLabel 5750 4050 2    50   Input ~ 0
+Text GLabel 3900 3700 2    50   Input ~ 0
 ROW0
-Text GLabel 5750 4200 2    50   Input ~ 0
+Text GLabel 3900 3800 2    50   Input ~ 0
 ROW1
-Text GLabel 5750 4350 2    50   Input ~ 0
+Text GLabel 3900 3900 2    50   Input ~ 0
 ROW2
-Text GLabel 5750 4500 2    50   Input ~ 0
+Text GLabel 3900 4000 2    50   Input ~ 0
 ROW3
-Text GLabel 5750 4650 2    50   Input ~ 0
+Text GLabel 3900 4100 2    50   Input ~ 0
 ROW4
-Text GLabel 5750 4800 2    50   Input ~ 0
+Text GLabel 3900 4200 2    50   Input ~ 0
 ROW5
+$Sheet
+S 7750 4000 1650 500 
+U 5D90FC83
+F0 "LED Chains" 50
+F1 "led_chains.sch" 50
+$EndSheet
+Text GLabel 4100 3550 2    50   Input ~ 0
+LED_DATA
+Wire Wire Line
+	2400 2100 2700 2100
+Wire Wire Line
+	2050 2600 2700 2600
+Wire Wire Line
+	2200 2300 2700 2300
+Wire Wire Line
+	2700 2400 2000 2400
+Wire Wire Line
+	1700 1500 2700 1500
+Wire Wire Line
+	2700 1700 1700 1700
+Wire Wire Line
+	2550 1300 2700 1300
+$Comp
+L Device:R_Small R6
+U 1 1 5D93D005
+P 4000 3550
+F 0 "R6" V 3804 3550 50  0000 C CNN
+F 1 "500" V 3895 3550 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 4000 3550 50  0001 C CNN
+F 3 "~" H 4000 3550 50  0001 C CNN
+	1    4000 3550
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3900 3500 3900 3550
+Connection ~ 3300 1000
+Wire Wire Line
+	3300 1000 3400 1000
+Wire Wire Line
+	3200 1000 3300 1000
+Connection ~ 3200 1000
+Wire Wire Line
+	3300 4600 3200 4600
+Wire Wire Line
+	2800 4600 3200 4600
+Connection ~ 3200 4600
+Wire Wire Line
+	3200 1000 3200 850 
+$Comp
+L MCU_Microchip_ATmega:ATmega32U4-AU U1
+U 1 1 5D8CB7C1
+P 3300 2800
+F 0 "U1" H 3300 911 50  0000 C CNN
+F 1 "ATmega32U4-AU" H 3300 820 50  0000 C CNN
+F 2 "Package_QFP:TQFP-44_10x10mm_P0.8mm" H 3300 2800 50  0001 C CIN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/Atmel-7766-8-bit-AVR-ATmega16U4-32U4_Datasheet.pdf" H 3300 2800 50  0001 C CNN
+	1    3300 2800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3900 3400 4450 3400
 $EndSCHEMATC

@@ -4,7 +4,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 2
+Sheet 2 3
 Title ""
 Date ""
 Rev ""
@@ -1434,32 +1434,8 @@ F 3 "~" V 1700 4100 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	1700 4000 1850 4000
-$Comp
-L MX_Alps_Hybrid:MX-NoLED MX?
-U 1 1 5DA4DDFA
-P 2600 3900
-AR Path="/5DA4DDFA" Ref="MX?"  Part="1" 
-AR Path="/5D9B08E9/5DA4DDFA" Ref="MX4-2"  Part="1" 
-F 0 "MX4-2" H 2682 4124 60  0000 C CNN
-F 1 "MX-NoLED" H 2682 4050 20  0000 C CNN
-F 2 "MX_Only:MXOnly-2.25U-NoLED" H 1975 3875 60  0001 C CNN
-F 3 "" H 1975 3875 60  0001 C CNN
-	1    2600 3900
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:D_Small D18
-U 1 1 5DA4DE00
-P 2400 4150
-F 0 "D18" V 2446 4082 50  0000 R CNN
-F 1 "SOD-123" V 2355 4082 50  0000 R CNN
-F 2 "Diode_SMD:D_SOD-123" V 2400 4150 50  0001 C CNN
-F 3 "~" V 2400 4150 50  0001 C CNN
-	1    2400 4150
-	0    -1   -1   0   
-$EndComp
 Wire Wire Line
-	2400 4050 2550 4050
+	2400 4000 2550 4000
 $Comp
 L MX_Alps_Hybrid:MX-NoLED MX?
 U 1 1 5DA4DE14
@@ -1908,7 +1884,7 @@ AR Path="/5DA56CF4" Ref="MX?"  Part="1"
 AR Path="/5D9B08E9/5DA56CF4" Ref="MX5-8"  Part="1" 
 F 0 "MX5-8" H 6032 4674 60  0000 C CNN
 F 1 "MX-NoLED" H 6032 4600 20  0000 C CNN
-F 2 "MX_Only:MXOnly-6U-Centered-NoLED" H 5325 4425 60  0001 C CNN
+F 2 "MX_Only:MXOnly-6.25U-NoLED" H 5325 4425 60  0001 C CNN
 F 3 "" H 5325 4425 60  0001 C CNN
 	1    5950 4450
 	1    0    0    -1  
@@ -1934,7 +1910,7 @@ AR Path="/5DA56D35" Ref="MX?"  Part="1"
 AR Path="/5D9B08E9/5DA56D35" Ref="MX5-11"  Part="1" 
 F 0 "MX5-11" H 7982 4674 60  0000 C CNN
 F 1 "MX-NoLED" H 7982 4600 20  0000 C CNN
-F 2 "MX_Only:MXOnly-1.5U-NoLED" H 7275 4425 60  0001 C CNN
+F 2 "MX_Only:MXOnly-1.25U-NoLED" H 7275 4425 60  0001 C CNN
 F 3 "" H 7275 4425 60  0001 C CNN
 	1    7900 4450
 	1    0    0    -1  
@@ -2905,13 +2881,8 @@ Wire Wire Line
 	10300 3800 10300 4400
 Connection ~ 10300 3800
 Wire Wire Line
-	2750 3850 2750 4400
-Wire Wire Line
 	2750 4400 2650 4400
-Wire Wire Line
-	2750 3200 2750 3850
 Connection ~ 2750 3200
-Connection ~ 2750 3850
 Wire Wire Line
 	3450 3200 3450 3700
 Wire Wire Line
@@ -2929,8 +2900,6 @@ Connection ~ 3650 3800
 Wire Wire Line
 	1150 4200 1700 4200
 Connection ~ 1700 4200
-Wire Wire Line
-	1700 4200 3300 4200
 Connection ~ 3300 4200
 Wire Wire Line
 	3300 4200 3850 4200
@@ -3235,4 +3204,38 @@ Wire Wire Line
 	4800 1400 4800 2000
 Connection ~ 4800 1400
 Connection ~ 4800 2000
+Wire Wire Line
+	1700 4200 2400 4200
+Wire Wire Line
+	2750 3200 2750 3800
+$Comp
+L MX_Alps_Hybrid:MX-NoLED MX?
+U 1 1 5DA4DDFA
+P 2600 3850
+AR Path="/5DA4DDFA" Ref="MX?"  Part="1" 
+AR Path="/5D9B08E9/5DA4DDFA" Ref="MX4-2"  Part="1" 
+F 0 "MX4-2" H 2682 4074 60  0000 C CNN
+F 1 "MX-NoLED" H 2682 4000 20  0000 C CNN
+F 2 "MX_Only:MXOnly-2.25U-NoLED" H 1975 3825 60  0001 C CNN
+F 3 "" H 1975 3825 60  0001 C CNN
+	1    2600 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D_Small D18
+U 1 1 5DA4DE00
+P 2400 4100
+F 0 "D18" V 2446 4032 50  0000 R CNN
+F 1 "SOD-123" V 2355 4032 50  0000 R CNN
+F 2 "Diode_SMD:D_SOD-123" V 2400 4100 50  0001 C CNN
+F 3 "~" V 2400 4100 50  0001 C CNN
+	1    2400 4100
+	0    -1   -1   0   
+$EndComp
+Connection ~ 2400 4200
+Wire Wire Line
+	2400 4200 3300 4200
+Connection ~ 2750 3800
+Wire Wire Line
+	2750 3800 2750 4400
 $EndSCHEMATC

@@ -246,6 +246,25 @@ X 2 2 200 0 100 L 50 50 0 1 P
 ENDDRAW
 ENDDEF
 #
+# WS2812B_WS2812B
+#
+DEF WS2812B_WS2812B IC 0 30 Y Y 1 F N
+F0 "IC" 950 300 50 H V L CNN
+F1 "WS2812B_WS2812B" 950 200 50 H V L CNN
+F2 "WS2812B" 950 100 50 H I L CNN
+F3 "https://www.adafruit.com/datasheets/WS2812B.pdf" 950 0 50 H I L CNN
+F4 "Intelligent control LED integrated light source" 950 -100 50 H I L CNN "Description"
+F5 "Worldsemi" 950 -300 50 H I L CNN "Manufacturer_Name"
+F6 "WS2812B" 950 -400 50 H I L CNN "Manufacturer_Part_Number"
+DRAW
+P 5 0 1 6 200 100 900 100 900 -200 200 -200 200 100 N
+X VDD 1 0 0 200 R 50 50 0 0 B
+X DOUT 2 0 -100 200 R 50 50 0 0 B
+X VSS 3 1100 0 200 L 50 50 0 0 B
+X DIN 4 1100 -100 200 L 50 50 0 0 B
+ENDDRAW
+ENDDEF
+#
 # power_+5V
 #
 DEF power_+5V #PWR 0 0 Y Y 1 F P

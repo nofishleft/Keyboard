@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP WS2812B
+D Intelligent control LED integrated light source
+K
+F https://www.adafruit.com/datasheets/WS2812B.pdf
+$ENDCMP
+#
+#End Doc Library
