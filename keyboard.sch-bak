@@ -39,27 +39,27 @@ $EndComp
 $Comp
 L power:GND #PWR0103
 U 1 1 5D8D3550
-P 4250 3300
-F 0 "#PWR0103" H 4250 3050 50  0001 C CNN
-F 1 "GND" H 4255 3127 50  0000 C CNN
-F 2 "" H 4250 3300 50  0001 C CNN
-F 3 "" H 4250 3300 50  0001 C CNN
-	1    4250 3300
+P 4800 3400
+F 0 "#PWR0103" H 4800 3150 50  0001 C CNN
+F 1 "GND" H 4805 3227 50  0000 C CNN
+F 2 "" H 4800 3400 50  0001 C CNN
+F 3 "" H 4800 3400 50  0001 C CNN
+	1    4800 3400
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:R_Small R5
 U 1 1 5D8D1835
-P 4000 3300
-F 0 "R5" V 3804 3300 50  0000 C CNN
-F 1 "10k" V 3895 3300 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" H 4000 3300 50  0001 C CNN
-F 3 "~" H 4000 3300 50  0001 C CNN
-	1    4000 3300
+P 4550 3400
+F 0 "R5" V 4354 3400 50  0000 C CNN
+F 1 "10k" V 4445 3400 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 4550 3400 50  0001 C CNN
+F 3 "~" H 4550 3400 50  0001 C CNN
+	1    4550 3400
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	4100 3300 4250 3300
+	4650 3400 4800 3400
 $Comp
 L Device:R_Small R3
 U 1 1 5D8D4621
@@ -447,17 +447,17 @@ Text GLabel 3900 2800 2    50   Input ~ 0
 COL4
 Text GLabel 3900 3000 2    50   Input ~ 0
 COL5
-Text GLabel 5750 2150 2    50   Input ~ 0
+Text GLabel 3900 2300 2    50   Input ~ 0
 COL6
-Text GLabel 5750 2300 2    50   Input ~ 0
+Text GLabel 3900 2200 2    50   Input ~ 0
 COL7
-Text GLabel 5750 2450 2    50   Input ~ 0
+Text GLabel 3900 1900 2    50   Input ~ 0
 COL8
-Text GLabel 5750 2600 2    50   Input ~ 0
+Text GLabel 3900 1800 2    50   Input ~ 0
 COL9
-Text GLabel 5750 2750 2    50   Input ~ 0
+Text GLabel 3900 1700 2    50   Input ~ 0
 COL10
-Text GLabel 5750 2900 2    50   Input ~ 0
+Text GLabel 3900 3200 2    50   Input ~ 0
 COL11
 Text GLabel 3900 3100 2    50   Input ~ 0
 COL12
@@ -495,42 +495,16 @@ Wire Wire Line
 	2400 2100 2700 2100
 Wire Wire Line
 	2050 2600 2700 2600
-Connection ~ 3200 4600
-Wire Wire Line
-	2800 4600 3200 4600
 Wire Wire Line
 	2200 2300 2700 2300
 Wire Wire Line
-	3900 3300 3900 3400
-Wire Wire Line
 	2700 2400 2000 2400
-Connection ~ 3200 1000
-Wire Wire Line
-	3200 1000 3200 850 
 Wire Wire Line
 	1700 1500 2700 1500
 Wire Wire Line
 	2700 1700 1700 1700
 Wire Wire Line
-	3300 4600 3200 4600
-Wire Wire Line
-	3200 1000 3300 1000
-Wire Wire Line
-	3300 1000 3400 1000
-Connection ~ 3300 1000
-Wire Wire Line
 	2550 1300 2700 1300
-$Comp
-L MCU_Microchip_ATmega:ATmega32U4-AU U1
-U 1 1 5D8CB7C1
-P 3300 2800
-F 0 "U1" H 3300 911 50  0000 C CNN
-F 1 "ATmega32U4-AU" H 3300 820 50  0000 C CNN
-F 2 "Package_QFP:TQFP-44_10x10mm_P0.8mm" H 3300 2800 50  0001 C CIN
-F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/Atmel-7766-8-bit-AVR-ATmega16U4-32U4_Datasheet.pdf" H 3300 2800 50  0001 C CNN
-	1    3300 2800
-	1    0    0    -1  
-$EndComp
 $Comp
 L Device:R_Small R6
 U 1 1 5D93D005
@@ -544,4 +518,65 @@ F 3 "~" H 4000 3550 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	3900 3500 3900 3550
+Connection ~ 3300 1000
+Wire Wire Line
+	3300 1000 3400 1000
+Wire Wire Line
+	3200 1000 3300 1000
+Connection ~ 3200 1000
+Wire Wire Line
+	3300 4600 3200 4600
+Wire Wire Line
+	2800 4600 3200 4600
+Connection ~ 3200 4600
+Wire Wire Line
+	3200 1000 3200 850 
+$Comp
+L MCU_Microchip_ATmega:ATmega32U4-AU U1
+U 1 1 5D8CB7C1
+P 3300 2800
+F 0 "U1" H 3300 911 50  0000 C CNN
+F 1 "ATmega32U4-AU" H 3300 820 50  0000 C CNN
+F 2 "Package_QFP:TQFP-44_10x10mm_P0.8mm" H 3300 2800 50  0001 C CIN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/Atmel-7766-8-bit-AVR-ATmega16U4-32U4_Datasheet.pdf" H 3300 2800 50  0001 C CNN
+	1    3300 2800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3900 3400 4450 3400
+$Comp
+L Device:R_Small R7
+U 1 1 5D91C75B
+P 2050 7000
+F 0 "R7" H 2109 7046 50  0000 L CNN
+F 1 "5.1k" H 2109 6955 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 2050 7000 50  0001 C CNN
+F 3 "~" H 2050 7000 50  0001 C CNN
+	1    2050 7000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1400 7100 1800 7100
+Wire Wire Line
+	2050 6900 2050 5600
+Wire Wire Line
+	2050 5600 1750 5600
+$Comp
+L Device:R_Small R8
+U 1 1 5D923014
+P 1800 7000
+F 0 "R8" H 1859 7046 50  0000 L CNN
+F 1 "5.1k" H 1859 6955 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 1800 7000 50  0001 C CNN
+F 3 "~" H 1800 7000 50  0001 C CNN
+	1    1800 7000
+	1    0    0    -1  
+$EndComp
+Connection ~ 1800 7100
+Wire Wire Line
+	1800 7100 2050 7100
+Wire Wire Line
+	1800 5700 1750 5700
+Wire Wire Line
+	1800 6900 1800 5700
 $EndSCHEMATC

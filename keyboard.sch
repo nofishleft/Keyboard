@@ -386,7 +386,7 @@ Wire Wire Line
 Wire Wire Line
 	1750 5900 1950 5900
 $Comp
-L Connector:USB_C_Plug_USB2.0 P1
+L Connector:USB_C_Receptacle_USB2.0 P1
 U 1 1 5D8EC3D3
 P 1150 6000
 F 0 "P1" H 1257 6867 50  0000 C CNN
@@ -544,4 +544,45 @@ F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/Atmel-7766-8-bit-AVR-ATmega
 $EndComp
 Wire Wire Line
 	3900 3400 4450 3400
+$Comp
+L Device:R_Small R7
+U 1 1 5D91C75B
+P 2050 7000
+F 0 "R7" H 2109 7046 50  0000 L CNN
+F 1 "5.1k" H 2109 6955 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 2050 7000 50  0001 C CNN
+F 3 "~" H 2050 7000 50  0001 C CNN
+	1    2050 7000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1400 7100 1800 7100
+Wire Wire Line
+	2050 6900 2050 5600
+Wire Wire Line
+	2050 5600 1750 5600
+$Comp
+L Device:R_Small R8
+U 1 1 5D923014
+P 1800 7000
+F 0 "R8" H 1859 7046 50  0000 L CNN
+F 1 "5.1k" H 1859 6955 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 1800 7000 50  0001 C CNN
+F 3 "~" H 1800 7000 50  0001 C CNN
+	1    1800 7000
+	1    0    0    -1  
+$EndComp
+Connection ~ 1800 7100
+Wire Wire Line
+	1800 7100 2050 7100
+Wire Wire Line
+	1800 5700 1750 5700
+Wire Wire Line
+	1800 6900 1800 5700
+Wire Wire Line
+	1750 6000 1750 5900
+Connection ~ 1750 5900
+Wire Wire Line
+	1750 6200 1750 6100
+Connection ~ 1750 6100
 $EndSCHEMATC
